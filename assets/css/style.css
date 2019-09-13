@@ -6,7 +6,43 @@ nav {
   /* background-color: aqua; */
 }
 
-li {
-  color: brown;
+body {
+  background-color: black;
+  color: white;
+  font-family: Montserrat,sans-serif;
 }
 
+.cabecalho {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1170px;
+  /* margin-left: auto;
+  margin-right: auto;
+  margin-top: 10px;
+  margin-bottom: 10px; */
+  margin: 10px auto;
+}
+
+.cabecalho .lista {
+  list-style-type: none;
+  display: inline;
+  margin-left: 20px;
+}
+
+.cabecalho .lista .link {
+  text-decoration: none;
+  color: white;
+  transition: color 300ms ease;
+  font-weight: 700;
+}
+.cabecalho .lista .link:hover {
+  color: red;
+}
+
+.cabecalho .lista.primeiro-item {
+  margin-left: 50px;
+}
+.cabecalho .lista.primeiro-item {
+  margin-left: 0px;
+}
