@@ -1,17 +1,18 @@
-h1 {
-  color: aquamarine;
-}
-
-nav {
-  /* background-color: aqua; */
-}
-
 body {
   background-color: black;
   color: white;
   font-family: Montserrat,sans-serif;
 }
 
+.main-warapper h1 {
+  font-weight: 600;
+  font-size: 55px;
+  margin: 0 0 5px;
+  line-height: 75px;
+  padding-top: 140px;
+  max-width: 1170px;
+
+}
 .cabecalho {
   display: flex;
   align-items: center;
