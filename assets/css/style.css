@@ -1,33 +1,49 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
   background-color: black;
   color: white;
   font-family: Montserrat,sans-serif;
 }
 
-.main-warapper h1 {
-  font-weight: 600;
-  font-size: 55px;
-  margin: 0 0 5px;
-  line-height: 75px;
-  padding-top: 140px;
-  max-width: 1170px;
-
+html,
+body {
+  margin: 0;
+  padding: 0;
 }
-.cabecalho {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+
+.container {
   max-width: 1170px;
+  margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+/*
+########################## HEADER ####################### 
+*/
+.cabecalho {
+  /* display: flex;
+  align-items: center;
+  justify-content: space-between; */
   /* margin-left: auto;
   margin-right: auto;
   margin-top: 10px;
   margin-bottom: 10px; */
-  margin: 10px auto;
+  padding-top: 30px;
+}
+
+.cabecalho .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .cabecalho .lista {
   list-style-type: none;
-  display: inline;
+  display: block;
   margin-left: 20px;
 }
 
@@ -36,6 +52,7 @@ body {
   color: white;
   transition: color 300ms ease;
   font-weight: 700;
+  display: block;
 }
 .cabecalho .lista .link:hover {
   color: red;
@@ -46,4 +63,32 @@ body {
 }
 .cabecalho .lista.primeiro-item {
   margin-left: 0px;
+}
+
+.cabecalho .lista-pai {
+  display: flex;
+  align-items: center;
+}
+
+/*
+  ########################## HERO ####################### 
+ */
+
+.hero {
+  /* display: flex;
+  align-items: center;
+  min-height: 700px; */
+  background-image: url(../img/gatonest.png);
+  background-attachment: fixed;
+  background-position: top;
+  background-size: cover;
+  background-color: black;
+  background-repeat: no-repeat;
+}
+
+.hero > .container { /* "">"" (significa filho direto) */
+  display: flex;
+  align-items: center;
+  min-height: 400px;
+  height: 100vh;
 }
