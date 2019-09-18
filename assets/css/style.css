@@ -152,14 +152,15 @@ body {
 
 /* ############################ HIGHLIGTHS ########################## */
 
-.highlights {
-  box-sizing: border-box;
-}
-
 .highlights-wrapper {
-  display: block;
   background-color: #f1f3f3;
   text-align: center;
+}
+
+.highlights__blocks {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .highlights__blocks h3 {
