@@ -149,3 +149,31 @@ body {
   border: 2px solid #ea2845;
   transition: color 300ms ease;
 }
+
+/* ############################ HIGHLIGTHS ########################## */
+
+.highlights {
+  box-sizing: border-box;
+}
+
+.highlights-wrapper {
+  display: block;
+  background-color: #f1f3f3;
+  text-align: center;
+}
+
+.highlights__blocks h3 {
+  font-weight: 700;
+  font-size: 18px;
+  color: #ea2845;
+  margin: 40px 0 0;
+}
+
+.highlights__blocks p {
+  color: black;
+  font-weight: 500;
+  font-size: 16px;
+  max-width: 300px;
+  margin: 20px auto;
+  line-height: 30px;
+}
