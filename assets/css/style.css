@@ -44,7 +44,7 @@ body {
 .cabecalho .lista {
   list-style-type: none;
   display: block;
-  margin-left: 20px;
+  margin-left: 25px;
 }
 
 .cabecalho .lista .link {
@@ -91,4 +91,46 @@ body {
   align-items: center;
   min-height: 400px;
   height: 100vh;
+}
+
+.hero__text-wrapper {
+  max-width: 600px;
+}
+
+.hero__title {
+  font-weight: 600;
+  font-size: 55px;
+  line-height: 75px;
+  margin: 0 0 5px;
+}
+
+.hero__text {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 32px;
+  margin-bottom: 60px;
+}
+
+.hero__button-wrapper {
+  display: flex;
+}
+
+.hero__button {
+  text-decoration: none;
+  color: white;
+  border-radius: 30px;
+  margin-right: 20px;
+  padding: 14px 28px;
+  font-size: 16px;
+  font-weight: 500;
+  min-width: 230px;
+  text-align: center;
+}
+
+.hero__button--documentation {
+  background-color: #ea2845;
+}
+
+.hero__button--source-code {
+
 }
