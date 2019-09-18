@@ -125,12 +125,27 @@ body {
   font-weight: 500;
   min-width: 230px;
   text-align: center;
-}
+  }
 
 .hero__button--documentation {
   background-color: #ea2845;
+  border: 2px solid #ea2845;
 }
 
 .hero__button--source-code {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  border: 2px solid white;
+}
 
+.hero__button--documentation:hover {
+  background-color: transparent;
+  transition: all 1ms ease-in;
+}
+
+.hero__button--source-code:hover {
+  color: #ea2845;
+  border: 2px solid #ea2845;
+  transition: color 300ms ease;
 }
