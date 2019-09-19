@@ -6,6 +6,7 @@ body {
   background-color: black;
   color: white;
   font-family: Montserrat,sans-serif;
+  font-size: 17.5px;
 }
 
 html,
@@ -28,6 +29,59 @@ body {
 img {
   display: block;
 }
+
+h1,
+h2,
+h3,
+h4 {
+  margin: 0;
+}
+
+.button {
+  text-decoration: none;
+  color: white;
+  border-radius: 30px;
+  margin-right: 20px;
+  padding: 14px 28px;
+  font-size: 16px;
+  font-weight: 500;
+  min-width: 230px;
+  text-align: center;
+  transition: all 300ms ease;
+  border: 2px solid;
+}
+
+.button--documentation {
+  background-color: #ea2845;
+  border-color:  #ea2845;
+}
+
+.button--source-code {
+  display: flex;
+  justify-content: center;
+  border-color:  white;
+}
+.button--documentation:hover {
+  background-color: transparent;
+}
+
+.button--source-code:hover {
+  color: #ea2845;
+  border: 2px solid #ea2845;
+}
+
+.button--enterprise {
+  color: #ea2845;
+  background-color: white;
+  border-color: #ea2845;
+}
+
+.button--enterprise:hover {
+  color: white;
+  border-color: white;
+  background-color: transparent;
+}
+
 
 /*
 ########################## HEADER ####################### 
@@ -69,6 +123,7 @@ img {
 .cabecalho .lista.primeiro-item {
   margin-left: 50px;
 }
+
 .cabecalho .lista.primeiro-item {
   margin-left: 0px;
 }
@@ -124,41 +179,8 @@ img {
   display: flex;
 }
 
-.hero__button {
-  text-decoration: none;
-  color: white;
-  border-radius: 30px;
-  margin-right: 20px;
-  padding: 14px 28px;
-  font-size: 16px;
-  font-weight: 500;
-  min-width: 230px;
-  text-align: center;
-  transition: all 300ms ease;
-}
-
-.hero__button--documentation {
-  background-color: #ea2845;
-  border: 2px solid #ea2845;
-}
-
-.hero__button--source-code {
-  display: flex;
-  justify-content: center;
-  border: 2px solid white;
-}
-
 .hero__button-text {
   margin-left: 6px;
-}
-
-.hero__button--documentation:hover {
-  background-color: transparent;
-}
-
-.hero__button--source-code:hover {
-  color: #ea2845;
-  border: 2px solid #ea2845;
 }
 
 /* ############################ HIGHLIGTHS ########################## */
@@ -184,6 +206,7 @@ img {
 
 .highlights__blocks {
   padding: 0 15px;
+  flex-basis: 100%;
 }
 
 .highlights__blocks h3 {
@@ -200,4 +223,38 @@ img {
   max-width: 300px;
   margin: 20px auto;
   line-height: 30px;
+}
+
+/* ########################## ENTERPRISE ################################## */
+
+.enterprise {
+  background-image: url(https://d33wubrfki0l68.cloudfront.net/c69d2eb089fe0e8a8729c5a1ad8fd5b3d7ca6468/support.f8bcb7f8.png);
+  background-position: 0 100%;
+  background-repeat: no-repeat;
+  background-color: #ed1543;
+}
+
+.enterprise  .container {
+  height: 500px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.enterprise__column {
+  width: 60%;
+}
+
+.enterprise__column h2 {
+  font-size: 32px;
+}
+
+.enterprise__column p {
+  font-weight: 500;
+  line-height: 32px;
+}
+
+.enterprise__column .button--enterprise {
+  margin: 25px 0;
+  display: inline-block;
 }
