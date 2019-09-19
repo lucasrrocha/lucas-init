@@ -21,6 +21,14 @@ body {
   padding-right: 15px;
 }
 
+.row {
+  margin: 0 -15px;
+}
+
+img {
+  display: block;
+}
+
 /*
 ########################## HEADER ####################### 
 */
@@ -84,6 +92,7 @@ body {
   background-size: cover;
   background-color: black;
   background-repeat: no-repeat;
+  min-height: 700px;
 }
 
 .hero > .container { /* "">"" (significa filho direto) */
@@ -125,7 +134,8 @@ body {
   font-weight: 500;
   min-width: 230px;
   text-align: center;
-  }
+  transition: all 300ms ease;
+}
 
 .hero__button--documentation {
   background-color: #ea2845;
@@ -134,33 +144,46 @@ body {
 
 .hero__button--source-code {
   display: flex;
-  align-items: center;
-  justify-content: space-evenly;
+  justify-content: center;
   border: 2px solid white;
+}
+
+.hero__button-text {
+  margin-left: 6px;
 }
 
 .hero__button--documentation:hover {
   background-color: transparent;
-  transition: all 1ms ease-in;
 }
 
 .hero__button--source-code:hover {
   color: #ea2845;
   border: 2px solid #ea2845;
-  transition: color 300ms ease;
 }
 
 /* ############################ HIGHLIGTHS ########################## */
 
-.highlights-wrapper {
+.highlights {
   background-color: #f1f3f3;
   text-align: center;
+  padding: 100px 0;
+}
+
+.highlights__icon-wrapper {
+  margin: 0 auto;
+}
+
+.highlights__icon-wrapper img {
+  margin: 0 auto;
+}
+
+.highlights .row {
+  display: flex;
+  justify-content: center;
 }
 
 .highlights__blocks {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+  padding: 0 15px;
 }
 
 .highlights__blocks h3 {
